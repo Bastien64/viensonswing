@@ -1,0 +1,467 @@
+
+@media (min-width: 768px) {
+.logo {
+    width: 83px;
+}
+
+.texttop {
+    width: 55%;
+}
+    .quote {
+        font-size: 40px!important; /* Taille réduite pour les petits écrans */
+    }
+
+body {
+    font-family: 'Merriweather', serif; /* Appliquer Merriweather partout */
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Merriweather', serif; /* Police pour les titres et paragraphes */
+}
+a, .btn, .custom-button a {
+    font-family: 'Merriweather', serif; /* Police pour liens et boutons */
+}
+
+.quote, .highlight {
+    font-family: 'Merriweather', serif; /* Police pour les citations et mises en valeur */
+}
+        header {
+            
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('dance-background.jpg') no-repeat center center/cover;
+        }
+ /* Titre principal */
+ .title {
+        font-size: 3.5rem; /* Taille du texte */
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .title .highlight {
+        color: #f77b55; /* Couleur orange pour "la danse" */
+    }
+
+    /* Texte descriptif */
+    .description {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    .description .site-name {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    /* Bouton */
+    .custom-button .btn-demo {
+        display: inline-block;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+    }
+
+ 
+        .style2 {
+            color: black!important;
+            size: 36px!important;
+        }
+
+        .about .row {
+            min-height: 50vh;
+        }
+
+        .about img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .about-text {
+            background: #222;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .about-text h2 {
+            color: #ff5722;
+        }
+
+        .about-text a {
+            margin-top: 20px;
+        }
+
+        .custom-button {
+            display: inline-block;
+            border: 2px solid #f4a8a1;
+            /* Couleur rose pâle pour la bordure */
+            padding: 10px 20px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            /* Choisissez une police similaire */
+            font-size: 18px;
+            font-weight: bold;
+            background-color: transparent;
+            position: relative;
+        }
+
+        .custom-button a {
+            text-decoration: none;
+            color: white;
+            /* Texte en blanc */
+            position: relative;
+        }
+
+        .custom-button a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3498db;
+            /* Couleur bleue de soulignement */
+            transition: width 0.3s ease;
+        }
+
+        .custom-button a:hover::after {
+            width: 100%;
+            /* Remplit toute la largeur au survol */
+        }
+
+        .carousel-item p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .testimonials {
+            background-color: white;
+            /* Couleur de fond blanche */
+            color: black;
+            /* Couleur du texte */
+            font-family: 'Georgia', serif;
+            /* Police élégante */
+            height: 40vh; display: flex; align-items: center; justify-content: center;
+        }
+
+        .quote {
+            font-size: 1.5rem;
+            /* Taille du texte */
+            line-height: 1.8;
+            /* Hauteur des lignes */
+            font-style: italic;
+            /* Style italique pour la citation */
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .quote::before {
+            content: '“';
+            /* Guillemets ouvrants */
+            font-size: 3rem;
+            position: absolute;
+            left: -20px;
+            color: black;
+        }
+
+        .quote::after {
+            content: '”';
+            /* Guillemets fermants */
+            font-size: 3rem;
+            position: absolute;
+            right: -20px;
+            color: black;
+        }
+
+        .trait::after {
+    content: "";
+    display: block;
+    width: 50px; /* Longueur du trait */
+    height: 3px; /* Épaisseur du trait */
+    background-color: #f4a8a1; /* Couleur du trait (rose pâle) */
+    margin: 10px auto 0; /* Centrer et espacer le trait */
+}
+
+    .img-container {
+        height: 100%; /* Prendre toute la hauteur */
+        display: flex; /* Flexbox pour centrer */
+        justify-content: center; /* Centrer horizontalement si nécessaire */
+        align-items: center; /* Centrer verticalement */
+    }
+
+    .img-container img {
+        height: 100%; /* Prendre toute la hauteur disponible */
+        width: auto; /* Conserver le ratio d'aspect */
+        max-width: 100%; /* Empêcher de dépasser la largeur de la div */
+        object-fit: cover; /* Recadrer l'image si nécessaire */
+        border-radius: 10px; /* Bordure arrondie */
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    .testimonials {
+        height: 40vh;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .quote {
+        font-size: 2rem; /* Taille réduite pour les petits écrans */
+    }
+
+    .logo {width: 45px;}
+
+    body {
+        font-family: 'Merriweather', serif; /* Appliquer Merriweather partout */
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        font-family: 'Merriweather', serif; /* Police pour les titres et paragraphes */
+    }
+    a, .btn, .custom-button a {
+        font-family: 'Merriweather', serif; /* Police pour liens et boutons */
+    }
+    
+    .quote, .highlight {
+        font-family: 'Merriweather', serif; /* Police pour les citations et mises en valeur */
+    }
+            header {
+                
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url('dance-background.jpg') no-repeat center center/cover;
+            }
+     /* Titre principal */
+     .title {
+            font-size: 2.5rem; /* Taille du texte */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        .title .highlight {
+            color: #f77b55; /* Couleur orange pour "la danse" */
+        }
+    
+        /* Texte descriptif */
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+    
+        .description .site-name {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+    
+        }
+    
+        /* Bouton */
+        .custom-button .btn-demo {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+        }
+    
+     .imagemobile {
+        margin-bottom: 1rem;
+     }
+            .style2 {
+                color: black!important;
+                size: 36px!important;
+            }
+    
+
+            .about img {
+                width: 100%;
+                object-fit: cover;
+            }
+    
+            .about-text {
+                background: #222;
+                color: white;
+                padding: 30px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+            }
+    
+            .about-text h2 {
+                color: #ff5722;
+            }
+    
+            .about-text a {
+                margin-top: 20px;
+            }
+    
+            .custom-button {
+                display: inline-block;
+                border: 2px solid #f4a8a1;
+                /* Couleur rose pâle pour la bordure */
+                padding: 10px 20px;
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                /* Choisissez une police similaire */
+                font-size: 18px;
+                font-weight: bold;
+                background-color: transparent;
+                position: relative;
+            }
+    
+            .custom-button a {
+                text-decoration: none;
+                color: white;
+                /* Texte en blanc */
+                position: relative;
+            }
+    
+            .custom-button a::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #3498db;
+                /* Couleur bleue de soulignement */
+                transition: width 0.3s ease;
+            }
+    
+            .custom-button a:hover::after {
+                width: 100%;
+                /* Remplit toute la largeur au survol */
+            }
+    
+            .carousel-item p {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+    
+            .testimonials {
+                background-color: white;
+                /* Couleur de fond blanche */
+                color: black;
+                /* Couleur du texte */
+                font-family: 'Georgia', serif;
+                /* Police élégante */
+                height: 20vh; display: flex; align-items: center; justify-content: center;
+            }
+            .testimonials2 {
+                background-color: white;
+                /* Couleur de fond blanche */
+                color: black;
+                /* Couleur du texte */
+                font-family: 'Georgia', serif;
+                /* Police élégante */
+                height: 40vh; display: flex; align-items: center; justify-content: center;
+            }
+    
+            .quote {
+                font-size: 1.5rem;
+                /* Taille du texte */
+                line-height: 1.8;
+                /* Hauteur des lignes */
+                font-style: italic;
+                /* Style italique pour la citation */
+                position: relative;
+                margin: 20px 0;
+            }
+    
+            .quote::before {
+                content: '“';
+                /* Guillemets ouvrants */
+                font-size: 3rem;
+                position: absolute;
+                left: -20px;
+                color: black;
+            }
+    
+            .quote::after {
+                content: '”';
+                /* Guillemets fermants */
+                font-size: 3rem;
+                position: absolute;
+                right: -20px;
+                color: black;
+            }
+    
+            .trait::after {
+        content: "";
+        display: block;
+        width: 50px; /* Longueur du trait */
+        height: 3px; /* Épaisseur du trait */
+        background-color: #f4a8a1; /* Couleur du trait (rose pâle) */
+        margin: 10px auto 0; /* Centrer et espacer le trait */
+    }
+    
+        .img-container {
+            height: 100%; /* Prendre toute la hauteur */
+            display: flex; /* Flexbox pour centrer */
+            justify-content: center; /* Centrer horizontalement si nécessaire */
+            align-items: center; /* Centrer verticalement */
+        }
+    
+        .img-container img {
+            height: 100%; /* Prendre toute la hauteur disponible */
+            width: auto; /* Conserver le ratio d'aspect */
+            max-width: 100%; /* Empêcher de dépasser la largeur de la div */
+            object-fit: cover; /* Recadrer l'image si nécessaire */
+            border-radius: 10px; /* Bordure arrondie */
+        }
+    
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+    
+    }
+
