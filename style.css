@@ -2,6 +2,11 @@
 @media (min-width: 768px) {
 .logo {
     width: 83px;
+    margin-bottom: 1rem;
+}
+
+.textvignette{
+    font-size: 14px;
 }
 
 .texttop {
@@ -30,7 +35,8 @@ a, .btn, .custom-button a {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: url('dance-background.jpg') no-repeat center center/cover;
+         
+            
         }
  /* Titre principal */
  .title {
@@ -230,7 +236,23 @@ a, .btn, .custom-button a {
         height: 40vh;
     }
 
-    
+    .imagemobile {
+        display: inline-block; /* Pour gérer le cadre autour */
+        position: relative;
+        width: auto;
+        max-width: 100%;
+        background-color: white;
+        padding: 15px; 
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px; 
+        transform: rotate(-5deg); 
+        transition: transform 0.3s ease; 
+        filter: grayscale(100%);
+     }
+
+     .imagemobile:hover {
+        transform: rotate(0); /* Redresser l'image au survol */
+    }
 }
 
 @media (max-width: 768px) {
@@ -304,7 +326,17 @@ a, .btn, .custom-button a {
         }
     
      .imagemobile {
-        margin-bottom: 1rem;
+        display: inline-block; /* Pour gérer le cadre autour */
+        position: relative;
+        width: auto;
+        max-width: 100%;
+        background-color: white; /* Couleur du cadre */
+        padding: 15px; /* Largeur du cadre blanc */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Effet d'ombre pour un style polaroid */
+        border-radius: 5px; /* Légèrement arrondi */
+        transform: rotate(-5deg); /* Inclinaison de l'image */
+        transition: transform 0.3s ease; /* Animation lors du survol */
+        filter: grayscale(100%); /* Convertir en noir et blanc */
      }
             .style2 {
                 color: black!important;
